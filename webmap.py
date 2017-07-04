@@ -9,7 +9,12 @@ Created on Tue Jul  4 12:37:44 2017
 import folium as fol
 
 
-map = fol.Map([17.4479,78.3772])
+map = fol.Map([23.5509,87.2904])
 
+fg = fol.FeatureGroup()
 
-map.save('pyhtonmap.html')
+fg.add_child(fol.Marker([23.5509,87.2904],popup = "NIT DURGAPUR",icon = fol.Icon(color = 'blue')))
+
+map.add_child(fg)
+
+map.save('pythonmap.html')

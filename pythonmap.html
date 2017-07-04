@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_f56f07a67e5b413c81f3cd72135b355a {
+            <style> #map_b81392d1b70f4f9cbc1060dbb7909f5e {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_f56f07a67e5b413c81f3cd72135b355a" ></div>
+            <div class="folium-map" id="map_b81392d1b70f4f9cbc1060dbb7909f5e" ></div>
         
 </body>
 <script>    
@@ -43,9 +43,9 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_f56f07a67e5b413c81f3cd72135b355a = L.map(
-                                  'map_f56f07a67e5b413c81f3cd72135b355a',
-                                  {center: [17.4479,78.3772],
+            var map_b81392d1b70f4f9cbc1060dbb7909f5e = L.map(
+                                  'map_b81392d1b70f4f9cbc1060dbb7909f5e',
+                                  {center: [23.5509,87.2904],
                                   zoom: 10,
                                   maxBounds: bounds,
                                   layers: [],
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_e9301b51f9204b9e9fc570bc60aa339f = L.tileLayer(
+            var tile_layer_6c406eb4d5284ac09f630776a97ed7a2 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -65,7 +65,44 @@
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_f56f07a67e5b413c81f3cd72135b355a);
+                ).addTo(map_b81392d1b70f4f9cbc1060dbb7909f5e);
 
+        
+    
+            var feature_group_8974a8128dda41478ad931af25c9b6f9 = L.featureGroup(
+                ).addTo(map_b81392d1b70f4f9cbc1060dbb7909f5e);
+        
+    
+
+            var marker_ee52345c685d4cee98943f9c6b5e51fb = L.marker(
+                [23.5509,87.2904],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8974a8128dda41478ad931af25c9b6f9);
+            
+    
+
+                var icon_c896ace1ca994facbdd065d2cad25339 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ee52345c685d4cee98943f9c6b5e51fb.setIcon(icon_c896ace1ca994facbdd065d2cad25339);
+            
+    
+            var popup_3e85d500eb9b4ce48c7c69c4ca603db3 = L.popup({maxWidth: '300'});
+
+            
+                var html_efee573249f34db9828cfd1633e09d31 = $('<div id="html_efee573249f34db9828cfd1633e09d31" style="width: 100.0%; height: 100.0%;">NIT DURGAPUR</div>')[0];
+                popup_3e85d500eb9b4ce48c7c69c4ca603db3.setContent(html_efee573249f34db9828cfd1633e09d31);
+            
+
+            marker_ee52345c685d4cee98943f9c6b5e51fb.bindPopup(popup_3e85d500eb9b4ce48c7c69c4ca603db3);
+
+            
         
 </script>
